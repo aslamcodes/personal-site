@@ -27,11 +27,9 @@ const Navbar = () => {
             >
               Portfolio
             </a>
-            <a
-              href="#contact"
-              className=" hover:text-gray-200 transition duration-300"
-            >
-              Contact
+
+            <a className=" hover:text-gray-200 transition duration-300">
+              Blogs
             </a>
           </div>
         </div>
