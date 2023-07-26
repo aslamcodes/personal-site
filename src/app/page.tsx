@@ -1,10 +1,14 @@
+import TimeLine from "@/components/Home/TimeLine";
 import Image from "next/image";
 import React from "react";
 
 export default function Home() {
   return (
     <main className="container mx-auto snap-mandatory snap-y">
-      <section className="py-10 flex flex-col justify-center items-center snap-start">
+      <section
+        className="py-10 flex flex-col justify-center items-center snap-start"
+        id="home"
+      >
         {/* Column 1 - Photo */}
         <div className="md:w-1/2">
           <Image
@@ -39,15 +43,15 @@ export default function Home() {
           <div className="w-full flex flex-col md:flex-row justify-around items-center gap-3 p-4">
             <Image
               src="/magic-box.png"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               alt="Magic Box(Computer)"
             />
             <div className="md:w-1/2 flex flex-col gap-5">
               <p className="text-4xl font-semibold">
                 About <span className="text-amber-900 ">Mohamed Aslam</span>
               </p>
-              <div className="text-2xl font-light" ref={null}>
+              <div className="text-2xl font-light transition-all " ref={null}>
                 {`Mohamed\tAslam was raised in Thiruvarur, India, born into a
                 hard-working family. From the moment he saw the magic box,
                 commonly known as "The\tComputer," his curiosity knew no bounds.
@@ -58,7 +62,7 @@ export default function Home() {
                   .map((e, idx) => (
                     <span
                       key={e + idx}
-                      className="hover:text-amber-600 transition-colors cursor-default"
+                      className="hover:text-amber-600 hover:font-normal transition-all cursor-default"
                     >
                       {e}{" "}
                     </span>
@@ -67,6 +71,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="h-screen">
+        <TimeLine />
       </section>
     </main>
   );
