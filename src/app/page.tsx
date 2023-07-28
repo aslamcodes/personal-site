@@ -1,8 +1,30 @@
-import TimeLine from "@/components/Home/TimeLine";
+import TimeLine, { TimeLineEntry } from "@/components/Home/TimeLine";
+import { ArrowDownCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Home() {
+  const timeline: TimeLineEntry[] = [
+    {
+      year: 2003,
+      title: "Embarking on Earth",
+      description:
+        "The first image of the world was captured and processed by the intricate combination of eyes and the human brain, marking a momentous step in understanding and appreciating the breathtaking beauty of our planet.",
+    },
+    {
+      year: 2006,
+      title: "The Enigmatic Magic Box",
+      description:
+        "Upon encountering the 'Magic Box' (computer) for the first time, an overwhelming surge of curiosity engulfed me, as I felt an irresistible desire to delve into its boundless possibilities.",
+    },
+    {
+      year: 2012,
+      title: "Unveiling The Wonders",
+      description:
+        "I finally acquired my very own Magic Box, unlocking countless realms of possibility, with my journey starting from the humble beginnings of MS Paint.",
+    },
+  ];
   return (
     <main className="container h-screen mx-auto snap-y snap-mandatory  overflow-scroll no-scrollbar">
       <section
@@ -75,12 +97,50 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-screen flex flex-col items-center">
-        <TimeLine />
-        <button className="p-3 bg-amber-900 rounded-full relative lg:left-28 mt-14">
+        <TimeLine timeline={timeline} />
+        <Link
+          href={"/timeline"}
+          className="p-3 bg-amber-900 rounded-full relative lg:left-28 mt-14"
+        >
           <p className="text-xl font-semibold text-center text-white">
             <span>Explore</span> More
           </p>
-        </button>
+        </Link>
+      </section>
+      <section className="min-h-screen snap-center flex flex-col items-center justify-center mt-14">
+        <div className="flex items-center justify-between gap-10">
+          <h1 className="relative text-4xl font-semibold text-amber-950">
+            Lets have a{" "}
+            <a
+              href="mailto:mohamedaslamcodes@gmail.com"
+              className=" text-amber-100 p-4 bg-amber-900 rounded-xl cursor-pointer animate-spin"
+            >
+              chat!
+              <ArrowDownCircleIcon className="w-10 absolute -top-16 right-8 text-amber-900 animate-bounce" />
+            </a>
+          </h1>
+          <div className="w-px h-10 bg-amber-800"></div>
+          <div className="flex flex-col gap-4">
+            <h3 className="text-amber-950 text-3xl font-semibold">
+              You can find me here!
+            </h3>
+            <div className="flex w-full items-center justify-between">
+              <div className="inline-flex items-center font-semibold rounded-md p-3 bg-sky-800 text-white">
+                <a
+                  href={"https://www.linkedin.com/in/mohamed-aslam-228911211/"}
+                >
+                  LinkedIn
+                </a>
+              </div>
+              <div className="inline-flex items-center font-semibold rounded-md p-3 bg-black text-white">
+                <a href={"https://github.com/aslamcodes"}>Github</a>
+              </div>
+              <div className="inline-flex items-center font-semibold rounded-md p-3 bg-sky-500   text-white">
+                <a href={"https://twitter.com/aslamcodes"}>Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
