@@ -108,7 +108,7 @@ export default function Home() {
         </Link>
       </section>
       <section className="min-h-screen snap-center flex flex-col items-center justify-center mt-14">
-        <div className="flex items-center justify-between gap-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           <h1 className="relative text-4xl font-semibold text-amber-950">
             Lets have a{" "}
             <a
@@ -119,7 +119,7 @@ export default function Home() {
               <ArrowDownCircleIcon className="w-10 absolute -top-16 right-8 text-amber-900 animate-bounce" />
             </a>
           </h1>
-          <div className="w-px h-10 bg-amber-800"></div>
+          <div className="w-px h-10 md:bg-amber-800 bg-white"></div>
           <div className="flex flex-col gap-4">
             <h3 className="text-amber-950 text-3xl font-semibold">
               You can find me here!
