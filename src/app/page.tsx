@@ -123,7 +123,7 @@ export default function Home() {
             </a>
           </h1>
           <div className="w-px h-10 md:bg-amber-800 bg-white"></div>
-          <div className="flex flex-col gap-4">
+          <section className="flex flex-col gap-4" id="contact">
             <h3 className="text-amber-950 text-3xl font-semibold">
               You can find me here!
             </h3>
@@ -142,7 +142,7 @@ export default function Home() {
                 <a href={"https://twitter.com/aslamcodes"}>Twitter</a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </main>

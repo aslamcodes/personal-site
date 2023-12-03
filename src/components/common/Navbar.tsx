@@ -26,6 +26,9 @@ const Navbar = () => {
                 >
                   Timeline
                 </a>
+                <a href="#contact" className="hover:text-gray-200 duration-300">
+                  Contact
+                </a>
               </>
             ) : (
               <Link href="/">Home</Link>
