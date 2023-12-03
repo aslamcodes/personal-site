@@ -13,7 +13,7 @@ export default function Home() {
         "The first image of the world was captured and processed by the intricate combination of eyes and the human brain, marking a momentous step in understanding and appreciating the breathtaking beauty of our planet.",
     },
     {
-      year: 2006,
+      year: 2009,
       title: "The Enigmatic Magic Box",
       description:
         "Upon encountering the 'Magic Box' (computer) for the first time, an overwhelming surge of curiosity engulfed me, as I felt an irresistible desire to delve into its boundless possibilities.",
