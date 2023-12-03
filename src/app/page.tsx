@@ -34,7 +34,7 @@ export default function Home() {
         {/* Column 1 - Photo */}
         <div className="md:w-1/2 flex flex-col justify-center items-center">
           <Image
-            src="/profile.jpeg"
+            src="/profile.png"
             width={500}
             height={500}
             alt="Picture of the author"
