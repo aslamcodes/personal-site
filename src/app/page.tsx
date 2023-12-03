@@ -26,7 +26,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="container h-screen mx-auto snap-y snap-mandatory  overflow-scroll no-scrollbar">
+    <main className="container h-screen mx-auto snap-y snap-mandatory  overflow-scroll no-scrollbar  scroll-smooth">
       <section
         className="p-3 md:p-4 py-10 h-screen flex flex-col justify-center items-center snap-start"
         id="home"
@@ -96,7 +96,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex flex-col items-center">
+      <section
+        className="min-h-screen flex flex-col items-center"
+        id="timeline"
+      >
         <TimeLine timeline={timeline} />
         <Link
           href={"/timeline"}

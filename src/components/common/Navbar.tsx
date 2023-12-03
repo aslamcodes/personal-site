@@ -20,6 +20,12 @@ const Navbar = () => {
                 <a href="#about" className="hover:text-gray-200 duration-300">
                   About
                 </a>
+                <a
+                  href="#timeline"
+                  className="hover:text-gray-200 duration-300"
+                >
+                  Timeline
+                </a>
               </>
             ) : (
               <Link href="/">Home</Link>
