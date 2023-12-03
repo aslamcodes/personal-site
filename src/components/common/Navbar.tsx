@@ -24,15 +24,15 @@ const Navbar = () => {
             ) : (
               <Link href="/">Home</Link>
             )}
-            <Link
+            {/* <Link
               href="/portfolio"
               className="hover:text-gray-200 duration-300"
             >
               Portfolio
-            </Link>
-            <Link href="/blogs" className="hover:text-gray-200 duration-300">
+            </Link> */}
+            {/* <Link href="/blogs" className="hover:text-gray-200 duration-300">
               Blogs
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
